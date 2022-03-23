@@ -12,7 +12,7 @@
   ],
   "heads": [
     {
-      "desc": "Wrapper of the AVbin library for the Nim language.",
+      "description": "Wrapper of the AVbin library for the Nim language.",
       "license": "LGPL",
       "name": "avbin",
       "ref": "refs/heads/master",
