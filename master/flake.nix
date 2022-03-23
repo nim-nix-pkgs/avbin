@@ -7,19 +7,19 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs.src-avbin-master.flake = false;
-  inputs.src-avbin-master.ref   = "refs/heads/master";
-  inputs.src-avbin-master.owner = "Vladar4";
-  inputs.src-avbin-master.repo  = "avbin";
-  inputs.src-avbin-master.type  = "github";
+  inputs.src-avbin_nim-master.flake = false;
+  inputs.src-avbin_nim-master.ref   = "refs/heads/master";
+  inputs.src-avbin_nim-master.owner = "Vladar4";
+  inputs.src-avbin_nim-master.repo  = "avbin";
+  inputs.src-avbin_nim-master.type  = "github";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
     lib  = flakeNimbleLib.lib;
-    args = ["self" "nixpkgs" "flakeNimbleLib" "src-avbin-master"];
+    args = ["self" "nixpkgs" "flakeNimbleLib" "src-avbin_nim-master"];
   in lib.mkRefOutput {
     inherit self nixpkgs ;
-    src  = deps."src-avbin-master";
+    src  = deps."src-avbin_nim-master";
     deps = builtins.removeAttrs deps args;
     meta = builtins.fromJSON (builtins.readFile ./meta.json);
   };
