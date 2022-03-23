@@ -36,10 +36,10 @@
       "inputs": {
         "flakeNimbleLib": "flakeNimbleLib",
         "nixpkgs": "nixpkgs",
-        "src-avbin-master": "src-avbin-master"
+        "src-avbin_nim-master": "src-avbin_nim-master"
       }
     },
-    "src-avbin-master": {
+    "src-avbin_nim-master": {
       "flake": false,
       "locked": {
         "lastModified": 1514732769,
