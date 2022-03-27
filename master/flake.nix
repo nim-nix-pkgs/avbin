@@ -11,6 +11,7 @@
   inputs.src-avbin_nim-master.ref   = "refs/heads/master";
   inputs.src-avbin_nim-master.owner = "Vladar4";
   inputs.src-avbin_nim-master.repo  = "avbin";
+  inputs.src-avbin_nim-master.dir   = "";
   inputs.src-avbin_nim-master.type  = "github";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
